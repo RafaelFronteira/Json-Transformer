@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./tratandoJson.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Tratando json</title>
+</head>
+<body>
+    <div>
+        <div class="margin">
+            <label for="json-file">Escolha um arquivo json</label><br><br>
+            <input type="file" onchange="infos(event)"  name="json-file" id="json-file">
+            <br><br><br>
+            <button onclick="saveFile()">Transformar e salvar</button>
+        </div>
+        <br>
+        <div class="margin">
+            <span>Name: <span id="name"></span></span>
+            <br>
+            <span>Size: <span id="size"></span></span>
+        </div>
+    </div>
+</body>
+</html>

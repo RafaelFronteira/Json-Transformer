@@ -1,0 +1,10 @@
+body {
+    margin: 5%;
+}
+
+.margin {
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    padding: 5px;
+    width: 300px;
+}
