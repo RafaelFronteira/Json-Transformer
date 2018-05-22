@@ -18,7 +18,7 @@ function _bytesToSize(bytes) {
 	if (bytes == 0) return '0 Byte';
 	const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
 	return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
- };
+ }
 
 function _fileReader(input) {
 	const reader = new FileReader();
@@ -68,10 +68,9 @@ function _save(name, json) {
 	document.body.removeChild(element);
 }
 
-// const jsonStringToExport = JSON.stringify(newJson);
-// const date = (new Date());
-// const fileName =  `Json_Exported_In-${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`; 
-
-// fs.writeFile(`./jsonExported/${fileName}.json`, jsonStringToExport, 'utf8', (err, data) => {
-// 	if(err) return console.log("Errou => ", err);
-// });
+function _bytesToSize(bytes) {
+	const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
+	if (bytes == 0) return '0 Byte';
+	const i = parseInt(Math.floor(Math.log(bytes) / Math.log(1024)));
+	return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
+ }
